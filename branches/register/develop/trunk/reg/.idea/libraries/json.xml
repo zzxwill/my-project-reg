@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="json">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/json-lib-2.2.3-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/gson-2.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/gson-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/json_simple-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/gson-2.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/json/src/json-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>

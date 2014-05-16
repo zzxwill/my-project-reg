@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="xml">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/xstream.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/xpp3_min-1.1.3.4.O.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/xml-apis.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/xalan.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/saxpath.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/jaxen-1.1-beta-12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/com.springsource.org.jaxen-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/com.springsource.org.dom4j-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/xstream-src.zip!/java" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/xstream-src.zip!/test" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.org.xmlpull-sources-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.javax.xml.stream-sources-1.0.1.jar!/src" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.org.apache.xml.resolver-sources-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.org.jaxen-sources-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.org.apache.xerces-sources-2.8.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/xml/src/com.springsource.com.thoughtworks.xstream-sources-1.3.0.jar!/" />
+    </SOURCES>
+  </library>
+</component>

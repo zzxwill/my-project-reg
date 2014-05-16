@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="j2ee">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/j2ee/j2ee.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

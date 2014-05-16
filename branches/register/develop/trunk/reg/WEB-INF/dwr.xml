@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2007, Your Corporation. All Rights Reserved.
+  change log:
+  1.create the first embedded config.
+  todo : use the Spring Config
+  -->
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 1.0//EN"
+        "http://www.getahead.ltd.uk/dwr/dwr20.dtd">
+<dwr>
+    <!-- without allow, DWR isn't allowed to do anything -->
+    <allow>
+
+        <!--<create creator="spring" javascript="GeneratePassword">-->
+            <!--<param name="beanName" value="generatePasswordService"/>-->
+        <!--</create>-->
+
+    </allow>
+</dwr>

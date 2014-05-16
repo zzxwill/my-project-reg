@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="reg:war exploded">
+    <output-path>D:/tomcat6/webapps/reg</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="reg/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="reg" />
+          <element id="module-output" name="core" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="apache" />
+          <element id="library" level="project" name="dwr" />
+          <element id="library" level="project" name="ibatis" />
+          <element id="library" level="project" name="jdbc" />
+          <element id="library" level="project" name="json" />
+          <element id="library" level="project" name="test" />
+          <element id="library" level="project" name="web" />
+          <element id="library" level="project" name="xml" />
+          <element id="library" level="project" name="j2ee" />
+          <element id="library" level="project" name="rapid-framework" />
+          <element id="library" level="project" name="spring" />
+          <element id="library" level="project" name="cglib" />
+          <element id="library" level="project" name="iaik" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

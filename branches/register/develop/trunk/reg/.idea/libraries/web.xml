@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="web">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/web/jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/web/standard.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/web/ognl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

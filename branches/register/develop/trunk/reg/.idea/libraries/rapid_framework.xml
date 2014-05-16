@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="rapid-framework">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/rapid-framework/backport-util-concurrent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/rapid-framework/rapid-framework.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/rapid-framework/src/rapid-framework-common-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>

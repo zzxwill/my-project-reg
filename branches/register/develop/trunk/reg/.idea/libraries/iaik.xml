@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="iaik">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/batik-1.5-fop-0.20-5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/bcprov-jdk16-145.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/cert-cvc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/ejbca-util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/ejbca-ws-cli.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/ejbca-ws.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/iaik_javax_crypto.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/iaik_jce.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/iaik_jce_demo.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/iaik/iaik_jce_native_aes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
