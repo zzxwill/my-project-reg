@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dwr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/dwr/dwr.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/dwr/src/dwr-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>

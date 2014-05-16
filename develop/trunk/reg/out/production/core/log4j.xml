@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <!--<layout class="org.apache.log4j.SimpleLayout"/>-->
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+
+
+    <appender name="rootFileAppender" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="../mplog/root.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxFileSize" value="10MB"/>
+        <param name="MaxBackupIndex" value="20"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+
+    <appender name="ncutFileAppenderError" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="../mplog/error.log"/>
+        <param name="Append" value="true"/>
+        <param name="RollingStyle" value="3"/>
+        <param name="MaxFileSize" value="1024KB"/>
+        <param name="MaxBackupIndex" value="20"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+    <appender name="ncutFileAppenderWarn" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="../mplog/warn.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxFileSize" value="1024KB"/>
+        <param name="MaxBackupIndex" value="20"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+    <appender name="ncutFileAppenderInfo" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="../mplog/info.log"/>
+        <param name="Append" value="true"/>
+        <param name="MaxBackupIndex" value="20"/>
+        <param name="MaxFileSize" value="1024KB"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+    <appender name="ncutFileAppenderDebug" class="org.apache.log4j.RollingFileAppender">
+        <param name="File" value="../mplog/debug.log"/>
+        <param name="Append" value="true"/>
+        <param name="RollingStyle" value="3"/>
+        <param name="MaxFileSize" value="1024KB"/>
+        <param name="MaxBackupIndex" value="20"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%p %d{yyyy-MM-dd HH:mm:ss.SSS} (%c:%L)- %m%n"/>
+        </layout>
+    </appender>
+
+    <logger name="ERROR.com.ncut">
+        <level value="ERROR#com.ncut.reg.utils.ApplogLevel"/>
+        <appender-ref ref="ncutFileAppenderError"/>
+    </logger>
+    <logger name="WARN.com.ncut">
+        <level value="WARN#com.ncut.reg.utils.ApplogLevel"/>
+        <appender-ref ref="ncutFileAppenderWarn"/>
+    </logger>
+    <logger name="INFO.com.ncut">
+        <level value="INFO#com.ncut.reg.utils.ApplogLevel"/>
+        <appender-ref ref="ncutFileAppenderInfo"/>
+    </logger>
+    <logger name="DEBUG.com.ncut">
+        <level value="DEBUG#com.ncut.reg.utils.ApplogLevel"/>
+        <appender-ref ref="ncutFileAppenderDebug"/>
+    </logger>
+    <root>
+        <priority value="ERROR"/>
+        <appender-ref ref="ConsoleAppender"/>
+    </root>
+</log4j:configuration>

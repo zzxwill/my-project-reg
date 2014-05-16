@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="apache">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-attributes-api-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-codec-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-cli-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-beanutils.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-lang-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-pool-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-vfs-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-logging-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-net-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-jxpath-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-io-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-httpclient-3.1-teamsun.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-fileupload-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-email-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-digester-1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-dbutils-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-dbcp-1.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/poi-3.7-20101029.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jcommon-1.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jfreechart-1.0.14.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../3rdpart/apache/src" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jackson-all-1.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/quartz-all-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/jxl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/commons-configuration-1.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-beanutils-src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-httpclient-3.1-src.zip!/commons-httpclient-3.1/src/contrib" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-httpclient-3.1-src.zip!/commons-httpclient-3.1/src/java" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-io-1.2-src-ide.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/log4j-src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-io-1.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-net-2.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/apache/src/commons-httpclient-3.1-src.zip!/commons-httpclient-3.1/src/test" />
+    </SOURCES>
+  </library>
+</component>

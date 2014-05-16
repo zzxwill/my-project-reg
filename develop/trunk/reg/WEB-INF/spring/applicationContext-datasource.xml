@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"-->
+<!--"http://www.springframework.org/dtd/spring-beans-2.0.dtd">-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+    <!-- DataSource -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://${reg.jdbc.host}:${reg.jdbc.port}/${reg.jdbc.database}?useUnicode=true&amp;characterEncoding=UTF-8"/>
+        <property name="username" value="${reg.jdbc.user}"/>
+        <property name="password" value="${reg.jdbc.password}"/>
+    </bean>
+
+    <!-- rapid SqlMapClientFactoryBean与spring SqlMapClientFactoryBean的区别是可以指定sqlExecutor -->
+    <bean id="sqlMapClient" class="cn.org.rapid_framework.ibatis.spring.SqlMapClientFactoryBean">
+        <property name="configLocation">
+            <value>classpath:sqlmap-config.xml</value>
+        </property>
+        <property name="mappingLocations">
+            <list>
+                <value>classpath*:/com/**/dao/*.xml</value>
+            </list>
+        </property>
+        <property name="dataSource" ref="dataSource"/>
+
+        <!-- 指定数据库分页方言Dialect, 其它方言:OracleDialect,SQLServerDialect,SybaseDialect,DB2Dialect,PostgreSQLDialect,MySQLDialect,DerbyDialect,HSQLDialect-->
+        <property name="sqlExecutor">
+            <bean class="cn.org.rapid_framework.ibatis.sqlmap.engine.execution.LimitSqlExecutor">
+                <property name="dialect">
+                    <bean class="cn.org.rapid_framework.jdbc.dialect.MySQLDialect"/>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+    <!--事务配置开始-->
+    <bean id="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <!-- 以 @Transactional 标注来定义事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+
+    <!-- 事务处理用的Advice -->
+    <!--<tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+    <!--<tx:attributes>-->
+    <!--<tx:method name="insert*" propagation="REQUIRED" rollback-for="Exception"/>-->
+    <!--<tx:method name="update*" propagation="REQUIRED" rollback-for="Exception"/>-->
+    <!--<tx:method name="delete*" propagation="REQUIRED" rollback-for="Exception"/>-->
+    <!--<tx:method name="query*"  propagation="REQUIRED" read-only="true"/>-->
+    <!--<tx:method name="*" propagation="SUPPORTS"/>-->
+    <!--</tx:attributes>-->
+    <!--</tx:advice>-->
+    <!--<aop:config proxy-target-class="true">-->
+    <!--切入所有的Service类-->
+    <!--<aop:pointcut id="serviceOperation" expression="execution(* com.teamsun.ump.service.*.*(..))"/>-->
+    <!--<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation"/>-->
+    <!--</aop:config>-->
+    <!--事务配置结束-->
+</beans>

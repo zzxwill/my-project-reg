@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jdbc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jdbc/com.springsource.com.mysql.jdbc-5.1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jdbc/db2jcc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jdbc/mysql-connector-java-5.0.7-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jdbc/db2jcc_license_cu.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../3rdpart/jdbc/jdbcldapbridge.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
